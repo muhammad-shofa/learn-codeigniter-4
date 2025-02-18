@@ -1,5 +1,0 @@
-database.default.hostname = localhost
-database.default.database = ci4_db1
-database.default.username = admingriffith
-database.default.password = Gr1ff1th@
-database.default.DBDriver = MySQLi
