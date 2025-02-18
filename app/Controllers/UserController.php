@@ -18,7 +18,7 @@ class UserController extends ResourceController
         $this->userModel = new UserModel();
     }
 
-    // method index untuk menampilkan data barang
+    // method index untuk menampilkan semua data user
     public function index()
     {
         // return view("user/index");
@@ -43,7 +43,8 @@ class UserController extends ResourceController
             'email'    => 'required|valid_email|is_unique[users.email]',
             'role'    => 'required',
         ])) {
-            return redirect()->to('/user/show-create')->withInput()->with('validation', \Config\Services::validation());
+            return redirect()->to('/user/show-create')->withInput()->with('validation', \Config\Services::validation()); // pesan error masih belum muncul ketika tidak sesuai dengan validasi
+
             // ->with('validation', \Config\Services::validation());
         }
 
@@ -58,29 +59,35 @@ class UserController extends ResourceController
 
         // redirect ke halaman user dengan pesan "New user added"
         return redirect()->to('/user')->with("success", "New user added");
-
-        // return redirect()->to('/user/show-create')->with("success", "New user added");
     }
 
-    // public function create()
-    // {
-    //     $this->userModel->save([
-    //         'name' => $this->request->getPost('name'),
-    //         'username' => $this->request->getPost('username'),
-    //         'password' => $this->request->getPost('password'),
-    //         'email' => $this->request->getPost('email'),
-    //         'role' => $this->request->getPost('role'),
-    //     ]);
-    //     return redirect()->to("/user");
-    // }
+    // method untuk eidt SEMENTARA
+    // public function edit($id)
 
-    // public function create()
-    // {
-    //     $this->barangModel->save([
-    //         'nama' => $this->request->getPost('nama'),
-    //         'harga' => $this->request->getPost('harga'),
-    //         'stok' => $this->request->getPost('stok'),
-    //     ]);
-    //     return redirect()->to('/barang');
-    // }
+    // method delete user
+    public function delete($user_id = 0)
+    {
+        $result = $this->userModel->delete($user_id); // delete() mengembalikan boolean true or false
+        if ($result) {
+            return redirect()->to('/user')->with('success', 'User deleted');
+        }
+        return redirect()->to('/user')->with('failed', 'Failed to delete user! try again.');
+    }
+
+    /* noted noted noted noted noted noted noted noted noted noted */
+    /* noted noted noted noted noted noted noted noted noted noted */
+    /* noted noted noted noted noted noted noted noted noted noted */
+    // ambil data pertama dari database
+    public function searchFirst()
+    {
+        $data = $this->userModel->first();
+        return print_r($data);
+    }
+
+    // ambil data berdasarkan id
+    public function searchSpecified($user_id = 0)
+    {
+        $data = $this->userModel->find($user_id);
+        return print_r($data);
+    }
 }

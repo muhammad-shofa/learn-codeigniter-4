@@ -22,7 +22,7 @@
             <th>Password</th>
             <th>Email</th>
             <th>Role</th>
-            <th>Aksi</th>
+            <th>Actions</th>
         </tr>
         <?php foreach ($user as $u) : ?>
             <tr>
@@ -34,7 +34,7 @@
                 <td><?= $u['role']; ?></td>
                 <td>
                     <a href="/user/edit/<?= $u['user_id']; ?>">Edit</a> |
-                    <a href="/user/delete/<?= $u['user_id']; ?>" onclick="return confirm('Yakin ingin menghapus?');">Hapus</a>
+                    <a href="/user/delete/<?= $u['user_id']; ?>" onclick="return confirm('Are you sure want to delete this user?');">Delete</a>
                 </td>
                 <!-- <td>
                     <a href="/barang/delete/<= $u['user_id']; ?>">Hapus</a>
