@@ -61,8 +61,28 @@ class UserController extends ResourceController
         return redirect()->to('/user')->with("success", "New user added");
     }
 
-    // method untuk eidt SEMENTARA
-    // public function edit($id)
+    // method untuk mengambild data user tertentu dan akan ditampilkan ke halaman form edit
+    public function edit($user_id = 0)
+    {
+        $data = $this->userModel->find($user_id);
+
+        if (!$data) {
+            return redirect()->to('/user')->with('error', 'User not found');
+        }
+
+        return view('user/edit', ['data' => $data]);
+    }
+
+    // method untuk mengambil data yang sudah diedit oleh user tertentu dari form edit
+    public function update($user_id = 0)
+    {
+        $newData = $this->request->getPost();
+
+        $this->userModel->update($user_id, $newData);
+
+        // return redirect()->to('/user')->with('success', "User edited : $newData");
+        return redirect()->to('/user')->with('success', "User edited");
+    }
 
     // method delete user
     public function delete($user_id = 0)
@@ -90,4 +110,11 @@ class UserController extends ResourceController
         $data = $this->userModel->find($user_id);
         return print_r($data);
     }
+
+    // macam - macam method get request CI4
+    // $this->request->getPost('key') //	Ambil 1 data dari POST
+    // $this->request->getPost() //	Ambil semua data POST dan simpan ke dalam array |  output array
+    // $this->request->getVar('key') //	Ambil dari GET atau POST (otomatis)
+    // $this->request->getGet('key') //	Ambil data dari GET
+    // $this->request->getRawInput() //	Ambil JSON atau raw data dari frontend
 }
