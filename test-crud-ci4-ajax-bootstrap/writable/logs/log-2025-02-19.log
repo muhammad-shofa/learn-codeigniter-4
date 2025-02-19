@@ -1,0 +1,1643 @@
+CRITICAL - 2025-02-19 09:51:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "User/index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/UserController.php(19): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/test-crud-ci4/public/index.php')
+CRITICAL - 2025-02-19 09:51:48 --> ErrorException: Undefined variable $user
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 23.
+ 1 APPPATH/Views/user/index.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/test-crud-ci4/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/test-crud-ci4/public/index.php')
+CRITICAL - 2025-02-19 09:52:56 --> ErrorException: Undefined variable $user
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 23.
+ 1 APPPATH/Views/user/index.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/test-crud-ci4/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/test-crud-ci4/public/index.php')
+CRITICAL - 2025-02-19 09:53:46 --> ErrorException: Undefined array key "user"
+[Method: GET, Route: /]
+in APPPATH/Controllers/UserController.php on line 21.
+ 1 APPPATH/Controllers/UserController.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/test-crud-ci4/public/index.php')
+CRITICAL - 2025-02-19 09:53:47 --> ErrorException: Undefined array key "user"
+[Method: GET, Route: /]
+in APPPATH/Controllers/UserController.php on line 21.
+ 1 APPPATH/Controllers/UserController.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/test-crud-ci4/public/index.php')
+CRITICAL - 2025-02-19 12:21:33 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:21:39 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:21:56 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:25:21 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:25:22 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:26:47 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:26:47 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:26:48 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:26:48 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:26:48 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:44:00 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:44:40 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:44:41 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:44:46 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:45:16 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:45:17 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:45:17 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:46:29 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:48:06 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:48:41 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:49:06 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:50:01 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:50:08 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:50:09 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:50:10 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:50:57 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:50:58 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:51:35 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:51:36 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:51:36 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:53:23 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:53:24 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:53:52 --> ErrorException: Undefined variable $router
+[Method: CLI, Route: serve]
+in APPPATH/Config/Routes.php on line 13.
+ 1 APPPATH/Config/Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Config/Routes.php')
+ 3 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/Boot.php(360): CodeIgniter\CLI\Console->run()
+ 5 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand()
+ 6 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark()
+CRITICAL - 2025-02-19 12:54:11 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:54:13 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:54:13 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:54:13 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:54:13 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:54:14 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:54:23 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:54:23 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:54:24 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:54:25 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:54:25 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:54:25 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:54:54 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:55:03 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:55:03 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:55:08 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:55:09 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:55:37 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:56:36 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:56:36 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:56:36 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:56:38 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:56:49 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:56:50 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:09 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:09 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:09 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:10 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:31 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:32 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:32 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:32 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:33 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:33 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:41 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:52 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:58:55 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:59:02 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:59:23 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 12:59:24 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:01:37 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:01:38 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:01:39 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:01:39 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:01:39 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:01:39 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:01:39 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:01:40 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:03 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:04 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:04 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:04 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:05 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:05 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:05 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:05 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:05 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:06 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:06 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:06 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:06 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:06 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:06 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:07 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:07 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:07 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:03:07 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:04:03 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:04:04 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:04:04 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:04:05 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:06:28 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:06:39 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:06:39 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:06:40 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:07:21 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:07:31 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:07:32 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
+CRITICAL - 2025-02-19 13:07:32 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: /]
+in APPPATH/Views/user/index.php on line 108.
+ 1 APPPATH/Views/user/index.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/app/Views/user/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UserController.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-and-bootstrap/public/index.php')
