@@ -1,0 +1,22 @@
+CRITICAL - 2025-02-19 09:25:13 --> ErrorException: Array to string conversion
+[Method: POST, Route: user/update/10]
+in APPPATH/Controllers/UserController.php on line 84.
+ 1 APPPATH/Controllers/UserController.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->update()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/public/index.php')
+CRITICAL - 2025-02-19 09:26:53 --> ErrorException: Array to string conversion
+[Method: POST, Route: user/update/10]
+in APPPATH/Controllers/UserController.php on line 84.
+ 1 APPPATH/Controllers/UserController.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->update()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/public/index.php')
