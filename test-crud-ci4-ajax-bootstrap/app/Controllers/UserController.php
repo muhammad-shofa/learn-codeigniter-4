@@ -34,10 +34,13 @@ class UserController extends ResourceController
     {
         $createDataUser = $this->request->getPost();
 
+        $hashed_password = password_hash($createDataUser['password'], PASSWORD_DEFAULT);
+        
+        $createDataUser['password'] = $hashed_password;
+
         $this->usersModel->save($createDataUser);
 
         return $this->response->setJSON(['status' => 'success', 'message' => 'New user created']);
-        // return redirect()->to('/')->with('success', 'New user created');
     }
 
     // Ambil data user berdasarkan user_id tertentu lalu tampilkan pada form edit
@@ -61,15 +64,14 @@ class UserController extends ResourceController
         $editedDataUser = $this->request->getPost();
 
         $this->usersModel->update($user_id, $editedDataUser);
-        
+
         return $this->response->setJSON(['status' => 'success']);
-        // return redirect()->to('/')->with('success', 'User edited');
     }
 
     // method untuk menghapus user berdasarakn user_id tertentu
     public function deleteUser($user_id = 0)
     {
         $this->usersModel->delete($user_id);
-        return redirect()->to('/')->with('success', 'User deleted');
+        return $this->response->setJSON(['status' => 'success', 'message' => 'User deleted']);
     }
 }

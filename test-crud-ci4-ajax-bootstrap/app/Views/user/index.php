@@ -21,19 +21,19 @@
         <?php } ?>
 
         <!-- Button trigger create user modal -->
-        <!-- <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#createUserModal">
+        <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#createUserModal">
             Add new user
-        </button> -->
+        </button>
 
         <!-- Create User Modal -->
-        <!-- <div class="modal fade" id="createUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="createUserModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add new user</h1>
+                        <h1 class="modal-title fs-5">Add new user</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form action="/user/create" method="post">
+                    <form id="createUserForm">
                         <div class="modal-body">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
@@ -62,12 +62,12 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Add User</button>
+                            <button type="button" class="add-user btn btn-primary">Add User</button>
                         </div>
                     </form>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- Table list data  -->
         <table class="table table-striped">
@@ -88,16 +88,16 @@
         </table>
 
         <!-- Edit user modal -->
-        <div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="editUserModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit user</h1>
+                        <h1 class="modal-title fs-5">Edit user</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <form>
-                        <input type="hidden" name="user_id" id="editUserId">
                         <div class="modal-body">
+                            <input type="hidden" name="user_id" id="editUserId">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
                                 <input type="text" class="form-control" name="name" id="editName">
@@ -130,6 +130,26 @@
                 </div>
             </div>
         </div>
+
+        <!-- Delete user modal -->
+        <div class="modal fade" id="deleteUserModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Delete user</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="delete-user_id-hidden">
+                        <p>Are you sure want to delete this user?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="delete-user btn btn-primary">Delete user</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- bootstrap 5.3 -->
@@ -157,7 +177,7 @@
                                 <td>${user.role}</td>
                                 <td>
                                      <button class="edit-user btn btn-warning btn-sm" data-user_id="${user.user_id}">Edit</button>
-                                     <button class="delete-user btn btn-danger btn-sm" data-user_id="${user.user_id}">Delete</button>
+                                     <button class="confirm-delete-user btn btn-danger btn-sm" data-user_id="${user.user_id}">Delete</button>
                                  </td>
                             </tr>`;
                         });
@@ -172,6 +192,36 @@
 
             // jalankan loadUserData
             loadUserData();
+
+            // ketika add-user diklik maka kirim data user ke backend untuk disimpan
+            $('.add-user').on('click', function() {
+                let formData = {
+                    name: $('#name').val(),
+                    username: $('#username').val(),
+                    password: $('#password').val(),
+                    email: $('#email').val(),
+                    role: $('#role').val(),
+                }
+
+                $.ajax({
+                    url: '/user/create',
+                    type: 'POST',
+                    data: formData,
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.status == 'success') {
+                            $('#createUserModal').modal('hide');
+                            $('#createUserForm')[0].reset(); // reset / bersihkan form                        
+                            alert(response.message);
+                            loadUserData();
+                        }
+                    },
+                    error: function() {
+                        alert('Failed add user');
+                    }
+
+                })
+            })
 
             // $('.edit-user').on('click', function() {
             // ambil data user dari backend dan tampilkan pada form modal edit
@@ -221,12 +271,43 @@
                     data: formData,
                     dataType: 'json',
                     success: function(response) {
-                        alert("User edited");
                         $("#editUserModal").modal("hide");
+                        alert("User edited");
                         loadUserData();
                     },
                     error: function() {
                         alert('Failed to edit user!');
+                    }
+                })
+            })
+
+            // ketika .confirm-delete-user diklik munculkan modal konfirmasi dan berikan user_id pada atribut modal
+            $(document).on('click', '.confirm-delete-user', function() {
+                let user_id = $(this).data('user_id');
+                console.log(user_id + 'dari confirm-delete-user');
+                $('#delete-user_id-hidden').val(user_id);
+
+                // $("#deleteUserModal").data('user_id', user_id);
+                $("#deleteUserModal").modal('show');
+            })
+
+            // ketika .delete-user diklik ambil user_id dari atribut dan kirim ke backend untuk dihapus
+            $('.delete-user').on('click', function() {
+                let user_id = $('#delete-user_id-hidden').val();
+
+                $.ajax({
+                    url: '/user/delete/' + user_id,
+                    type: 'DELETE',
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.status == 'success') {
+                            $("#deleteUserModal").modal('hide');
+                            alert(response.message);
+                            loadUserData();
+                        }
+                    },
+                    error: function() {
+                        alert('Failed to delete user');
                     }
                 })
             })
