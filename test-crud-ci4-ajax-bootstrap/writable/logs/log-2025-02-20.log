@@ -1,0 +1,150 @@
+ERROR - 2025-02-20 10:19:15 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/app/Controllers/UserController.php(27): CodeIgniter\BaseModel->findAll()
+#7 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\UserController->getData()
+#8 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/app/Controllers/UserController.php(27): CodeIgniter\BaseModel->findAll()
+#6 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\UserController->getData()
+#7 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-02-20 10:19:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: user/get-data]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(27): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/public/index.php')
+ERROR - 2025-02-20 10:19:16 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/app/Controllers/UserController.php(27): CodeIgniter\BaseModel->findAll()
+#7 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\UserController->getData()
+#8 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/app/Controllers/UserController.php(27): CodeIgniter\BaseModel->findAll()
+#6 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\UserController->getData()
+#7 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-02-20 10:19:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: user/get-data]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(27): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/public/index.php')
+ERROR - 2025-02-20 10:19:16 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/app/Controllers/UserController.php(27): CodeIgniter\BaseModel->findAll()
+#7 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\UserController->getData()
+#8 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/app/Controllers/UserController.php(27): CodeIgniter\BaseModel->findAll()
+#6 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\UserController->getData()
+#7 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 /home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-02-20 10:19:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: user/get-data]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(27): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/wyxli/learn-codeigniter-4/test-crud-ci4-ajax-bootstrap/public/index.php')

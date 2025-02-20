@@ -49,6 +49,8 @@ class UserController extends ResourceController
             return $this->response->setJSON(['status' => 'error', 'message' => 'User not found']);
         }
 
+        // var_dump($dataUser);
+
         // mengembalikan data dalam bentuk JSON agar bisa diproses oleh ajax
         return $this->response->setJSON(['status' => 'success', 'data' => $dataUser]);
     }
@@ -59,7 +61,9 @@ class UserController extends ResourceController
         $editedDataUser = $this->request->getPost();
 
         $this->usersModel->update($user_id, $editedDataUser);
-        return redirect()->to('/')->with('success', 'User edited');
+        
+        return $this->response->setJSON(['status' => 'success']);
+        // return redirect()->to('/')->with('success', 'User edited');
     }
 
     // method untuk menghapus user berdasarakn user_id tertentu

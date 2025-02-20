@@ -96,13 +96,14 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <form>
+                        <input type="hidden" name="user_id" id="editUserId">
                         <div class="modal-body">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
                                 <input type="text" class="form-control" name="name" id="editName">
                             </div>
                             <div class="mb-3">
-                                <label for="emusernameail" class="form-label">Username</label>
+                                <label for="username" class="form-label">Username</label>
                                 <input type="text" class="form-control" name="username" id="editUsername">
                             </div>
                             <div class="mb-3">
@@ -116,7 +117,6 @@
                             <div class="mb-3">
                                 <label for="role" class="form-label">Role</label>
                                 <select class="form-select" name="role" id="editRole" aria-label="Default select example">
-                                    <option selected value="">Select Role</option>
                                     <option value="user">User</option>
                                     <option value="admin">Admin</option>
                                 </select>
@@ -124,7 +124,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Edit user</button>
+                            <button type="button" class="save-edit btn btn-primary">Save edit</button>
                         </div>
                     </form>
                 </div>
@@ -173,29 +173,60 @@
             // jalankan loadUserData
             loadUserData();
 
-
-            // ketika edit-user diklik
-            $('.edit-user').on('click', function() {
+            // $('.edit-user').on('click', function() {
+            // ambil data user dari backend dan tampilkan pada form modal edit
+            $(document).on('click', '.edit-user', function() { // pakai $(document).on('click'.... agar dapat berfungsi meskipun elemen dibuat secara dinamis
                 let user_id = $(this).data('user_id');
 
                 $.ajax({
-                    url: '/user/show-data-edit' + user_id,
+                    url: '/user/show-data-edit/' + user_id,
                     type: 'GET',
                     dataType: 'json',
                     success: function(response) {
-                        alert(response.data);
                         if (response.status == 'success') {
+                            $("#editUserId").val(user_id);
                             $("#editName").val(response.data.name);
                             $("#editUsername").val(response.data.username);
                             $("#editPassword").val(response.data.password);
                             $("#editEmail").val(response.data.email);
                             $("#editRole").val(response.data.role);
 
+                            // $("#editUserModal").data("user_id", user_id);
                             $("#editUserModal").modal("show");
                         }
                     },
                     error: function() {
                         alert('Failed fetching user data');
+                    }
+                })
+            })
+
+            // simpan edit user
+            // $('.save-edit').on('click', function() {
+            $(document).on('click', '.save-edit', function() {
+                // let user_id = $(this).data('user_id');
+                let user_id = $('#editUserId').val();
+
+                let formData = {
+                    name: $('#editName').val(),
+                    username: $('#editUsername').val(),
+                    password: $('#editPassword').val(),
+                    email: $('#editEmail').val(),
+                    role: $('#editRole').val(),
+                }
+
+                $.ajax({
+                    url: '/user/save-edit/' + user_id,
+                    type: 'POST',
+                    data: formData,
+                    dataType: 'json',
+                    success: function(response) {
+                        alert("User edited");
+                        $("#editUserModal").modal("hide");
+                        loadUserData();
+                    },
+                    error: function() {
+                        alert('Failed to edit user!');
                     }
                 })
             })
