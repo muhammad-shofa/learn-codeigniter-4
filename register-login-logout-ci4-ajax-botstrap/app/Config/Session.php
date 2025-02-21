@@ -22,9 +22,7 @@ class Session extends BaseConfig
      * @var class-string<BaseHandler>
      */
     public string $driver = FileHandler::class;
-    public $gcProbability = 1;   // 1% kemungkinan garbage collection dijalankan
-    public $gcDivisor = 100;     // Nilai pembagi probabilitas
-    
+
     /**
      * --------------------------------------------------------------------------
      * Session Cookie Name
@@ -43,9 +41,6 @@ class Session extends BaseConfig
      * Setting to 0 (zero) means expire when the browser is closed.
      */
     public int $expiration = 7200;
-    // 7200 = 2 jam
-    // 86400 = 24 jam
-    // 3600 = 1 jam
 
     /**
      * --------------------------------------------------------------------------
