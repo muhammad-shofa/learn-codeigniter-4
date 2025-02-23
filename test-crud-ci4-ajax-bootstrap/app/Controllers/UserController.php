@@ -35,7 +35,7 @@ class UserController extends ResourceController
         $createDataUser = $this->request->getPost();
 
         $hashed_password = password_hash($createDataUser['password'], PASSWORD_DEFAULT);
-        
+
         $createDataUser['password'] = $hashed_password;
 
         $this->usersModel->save($createDataUser);

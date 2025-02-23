@@ -12,4 +12,5 @@ $routes->get('/register', 'UserController::registerPage');
 
 // Auth routes
 $routes->post('/auth/login', 'UserController::login');
+$routes->post('/auth/register','UserController::register');
 $routes->get('/auth/logout', 'UserController::logout');

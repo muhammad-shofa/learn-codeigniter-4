@@ -78,8 +78,21 @@ class UserController extends ResourceController
         return $this->response->setJSON(['status' => 'success', 'message' => 'Login success']);
     }
 
+    // 
+    public function register()
+    {
+        $data = $this->request->getPost();
+
+        $hashed_password = password_hash($data['password'], PASSWORD_DEFAULT);
+        $data['password'] = $hashed_password;
+
+        $this->usersModel->save($data);
+
+        return $this->response->setJSON(['status' => 'success', 'message' => 'Register success']);
+    }
+
     // tangani logout
-    function logout()
+    public function logout()
     {
         $session = session();
         $session->destroy();

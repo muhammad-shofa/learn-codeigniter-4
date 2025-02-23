@@ -13,17 +13,67 @@
 
 <body>
     <div class="container py-5">
-        <div class="wrapper border border-3 border-success rounded-top-4 rounded-bottom-3">
-            <h1 class="bg-success text-white rounded-top-3 p-3">Learning Login, Register and Logout using CodeIgniter 4, Ajax, Bootstrap!</h1>
-            <div class="all-btn d-flex justify-content-center gap-3 align-items-center">
-                <a href="/user/login" class="btn btn-success">Login</a>
-                <a href="/user/register" class="btn btn-outline-success">Register</a>
-            </div>
-            <p class="bg-success text-warning rounded-bottom-3 p-3">I made this project specifically to learn how to create register, login and logout features using Codeigniter 4, Ajax (jQuery) and bootstrap, so I will display things related to the box above.</p>
+        <div class="wrapper-login w-50 mx-auto border border-3 border-success rounded">
+            <h2 class="text-center bg-success text-white p-3">Register</h2>
+            <form class="p-3">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <button type="button" class="btn-register btn btn-success">Register</button>
+            </form>
         </div>
     </div>
     <!-- Bootstrap 5.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".btn-register").on('click', function() {
+                let name = $('#name').val();
+                let username = $('#username').val();
+                let password = $('#password').val();
+                let email = $('#email').val();
+
+                $.ajax({
+                    url: '/auth/register',
+                    type: 'POST',
+                    data: {
+                        name: name,
+                        username: username,
+                        password: password,
+                        email: email
+                    },
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.status == 'success') {
+                            alert('Register successfull, login now');
+                            window.location.href = '/login';
+                        } else {
+                            alert('Register failed');
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("AJAX Error:", error);
+                        alert("Register failed, try again");
+                    }
+                })
+            })
+        })
+    </script>
 </body>
 
 </html>

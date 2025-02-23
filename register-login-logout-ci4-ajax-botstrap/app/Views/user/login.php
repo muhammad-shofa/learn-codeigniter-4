@@ -49,6 +49,7 @@
                     success: function(response) {
                         if (response.status == 'success') {
                             alert('Login successfull');
+                            window.location.href = '/';
                         } else {
                             alert('Login failed');
                         }
