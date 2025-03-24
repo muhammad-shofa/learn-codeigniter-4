@@ -53,7 +53,6 @@ class UserController extends ResourceController
         }
 
         // var_dump($dataUser);
-
         // mengembalikan data dalam bentuk JSON agar bisa diproses oleh ajax
         return $this->response->setJSON(['status' => 'success', 'data' => $dataUser]);
     }

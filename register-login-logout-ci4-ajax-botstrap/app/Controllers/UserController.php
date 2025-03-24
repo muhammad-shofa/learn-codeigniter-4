@@ -25,7 +25,7 @@ class UserController extends ResourceController
             'role' => $session->get('role'),
             'is_login' => $session->get('is_login'),
             'login_at' => $session->get('login_at'),
-            'expired_in' => date('Y-m-d H:i:s', $session->get('expired_in')),
+            'expired_in' => $session->get('expired_in') ? date('Y-m-d H:i:s', $session->get('expired_in')) : null
         ];
 
         return view('user/index', $data);

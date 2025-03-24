@@ -16,13 +16,13 @@
         <div class="wrapper border border-3 border-success rounded-top-4 rounded-bottom-3">
             <h1 class="bg-success text-white rounded-top-3 p-3">Learning Login, Register and Logout using CodeIgniter 4, Ajax, Bootstrap!</h1>
             <ul class="list-group m-2">
-                <li class="list-group-item">Name : <?= $loggedUser['name'] ?? "John Doe" ?></li>
-                <li class="list-group-item">Username : <?= $loggedUser['username'] ?? "John Doe" ?></li>
-                <li class="list-group-item">Email : <?= $loggedUser['email'] ?? "johndoe@gmail.com" ?></li>
+                <li class="list-group-item">Name : <?= $loggedUser['name'] ?? "invalid" ?></li>
+                <li class="list-group-item">Username : <?= $loggedUser['username'] ?? "inavlid" ?></li>
+                <li class="list-group-item">Email : <?= $loggedUser['email'] ?? "invalid" ?></li>
                 <li class="list-group-item">Role : <?= $loggedUser['role'] ?? "invalid" ?></li>
                 <li class="list-group-item">Status : <?= isset($loggedUser['is_login']) && $loggedUser['is_login'] ? '<b class="text-success">Logged In</b>' : '<b class="text-danger">Logout</b>' ?></li>
                 <li class="list-group-item">Login At : <?= $loggedUser['login_at'] ?? 'invalid' ?></li>
-                <li class="list-group-item">Expired In : <?= $loggedUser['expired_in'] ?? "2 H" ?></li>
+                <li class="list-group-item">Expired In : <?= $loggedUser['expired_in'] ?? "invalid" ?></li>
                 <li class="list-group-item">Available Action :
                     <?php
                     if (isset($loggedUser['is_login']) && $loggedUser['is_login'] == true) { ?>
