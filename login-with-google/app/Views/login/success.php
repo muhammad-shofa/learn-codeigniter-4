@@ -14,21 +14,10 @@
             <div class="col-md-6 mx-auto">
                 <div class="card">
                     <div class="card-body">
-                        <h3>Login Accoount</h3>
-                        <form action="" method="POST">
-                            <div class="mb-3">
-                                <label>Email</label>
-                                <input type="text" name="" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label>Password</label>
-                                <input type="password" name="" class="form-control">
-                            </div>
-                            <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-primary">Login</button>
-                                <a href="<?= $link ?>" class="btn btn-danger">Login With Google</a>
-                            </div>
-                        </form>
+                        <h3>Login With Google Success</h3>
+                        <p>Name : <?= session()->get('name') ?></p>
+                        <p>Email : <?= session()->get('email') ?></p>
+                        <a href="<?= base_url('login/logout')?>" class="btn btn-danger">Logout</a>
                     </div>
                 </div>
             </div>
