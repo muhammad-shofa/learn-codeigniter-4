@@ -13,7 +13,12 @@
 <body>
     <div class="container-lg border border-3 p-4">
         <h1>Hello World</h1>
+        <div id="userDataContainer" class="border"></div>
+
+
+
     </div>
+
     </div>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -31,6 +36,20 @@
                 success: (response) => {
                     if (response.status == 'success') {
                         console.log(response.data)
+                        let row = '';
+                        response.data.forEach((user) => {
+                            row += `
+                            <div class="border border-3 p-4">
+                                <h3>${user.username}</h3>
+                                <p>${user.email}</p>
+                                <p>${user.gender}</p>
+                                <p>${user.role}</p>
+                            </div>
+                                `;
+                        })
+
+                        $('#userDataContainer').html(row);
+
                     } else {
                         console.log(response.data)
                     }
