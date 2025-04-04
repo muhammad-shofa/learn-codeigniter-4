@@ -8,5 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->get('/', 'UserController::index');
 $routes->get('/api/getUser', 'UserController::getUser');
-$routes->get('/databasetest', 'DatabaseTest::index');
 
