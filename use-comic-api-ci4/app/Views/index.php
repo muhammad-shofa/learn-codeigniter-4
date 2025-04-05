@@ -26,6 +26,25 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $.ajax({
+                url: "/comic",
+                type: "GET",
+                dataType: "json",
+                success: (response) => {
+                    if (repsonse.status == "success") {
+                        console.log(response.data);
+                    }
+                },
+                error: (xhr, status, error) => {
+                    console.log(xhr);
+                    console.log(status);
+                    console.log(error);
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
