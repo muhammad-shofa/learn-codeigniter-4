@@ -33,7 +33,7 @@
                 type: "GET",
                 dataType: "json",
                 success: (response) => {
-                    if (repsonse.status == "success") {
+                    if (response.success) {
                         console.log(response.data);
                     }
                 },

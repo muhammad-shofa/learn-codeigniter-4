@@ -18,6 +18,5 @@ class ComicController extends BaseController
         $data["comic"] = json_decode($response->getBody(), true);
 
         return $this->response->setJSON($data['comic']);
-
     }
 }
