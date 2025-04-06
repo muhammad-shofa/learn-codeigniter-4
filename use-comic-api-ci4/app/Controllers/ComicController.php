@@ -15,14 +15,9 @@ class ComicController extends BaseController
         $client = service("curlrequest");
         $response = $client->get("https://komiku-api.fly.dev/api/comic/list");
 
-        // return $this->$response->getBody();
+        $data["comic"] = json_decode($response->getBody(), true);
 
-        // dd($data['comic']);
+        return $this->response->setJSON($data['comic']);
 
-        // $this->response->setJSON()
-        return $this->response->setJSON([
-            'status' => 'success',
-            'data' => json_decode($response->getBody())
-        ]);
     }
 }
