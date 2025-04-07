@@ -16,7 +16,8 @@
         <p class="lead">This is a simple application to learn how to use the Manga API.</p>
         <hr class="my-4">
         <p>Click the button below to get a list of manga.</p>
-        <a class="btn btn-primary btn-lg" href="<?= base_url('manga') ?>" role="button">Get Manga</a>
+        <button class="btn btn-primary" id="showData">Show data</button>
+        <div class="containerDataComic"></div>
     </div>
 
     <!-- bootstrap -->
@@ -28,6 +29,7 @@
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(() => {
+            // $('#showData').on("click", () => {
             $.ajax({
                 url: "/comic",
                 type: "GET",
@@ -35,6 +37,13 @@
                 success: (response) => {
                     if (response.success) {
                         console.log(response.data);
+                        // let row = "";
+                        // response.data.forEach((comic) => {
+                        //     console.log(comic.title);
+                        //     row = `<p>Judul : ${comic.title}</p>`;
+                        // })
+
+                        // $(".containerDataComic").html(row);
                     }
                 },
                 error: (xhr, status, error) => {
@@ -43,6 +52,9 @@
                     console.log(error);
                 }
             })
+            // })
+
+
         })
     </script>
 </body>
