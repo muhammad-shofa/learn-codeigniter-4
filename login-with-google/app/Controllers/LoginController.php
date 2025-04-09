@@ -32,14 +32,11 @@ class LoginController extends BaseController
         return view('login/index', $data);
     }
 
+    // tangani proses login dengan google
     public function process()
     {
         // ambil token dari client
         $token = $this->googleClient->fetchAccessTokenWithAuthCode($this->request->getVar('code'));
-
-        // debug
-        // var_dump($token);
-        // dd($token);
 
         if (!isset($token['error'])) {
             $this->googleClient->setAccessToken($token['access_token']);
