@@ -12,5 +12,12 @@ class PagesController extends BaseController
         // return view('pages/dashboard');
     }
 
+    public function userManagement()
+    {
+        $data = ["title" => "User Management"];
+
+        return view("pages/user-management", $data);
+    }
+
     // public function 
 }

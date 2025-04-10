@@ -24,13 +24,56 @@
             data-lte-toggle="treeview"
             role="menu"
             data-accordion="false">
+            <!-- dashboard -->
             <li class="nav-item">
-                <a href="#0" class="nav-link">
-                    <i class="nav-icon bi bi-palette"></i>
+                <a href="/" class="nav-link">
+                    <i class="nav-icon bi bi-bar-chart"></i>
                     <p>Dashboard</p>
                 </a>
             </li>
-            
+
+            <!-- user management -->
+            <li class="nav-item">
+                <a href="/user-management" class="nav-link">
+                    <i class="nav-icon bi bi-person"></i>
+                    <p>User Management</p>
+                </a>
+            </li>
+
+            <!-- item management -->
+            <li class="nav-item">
+                <a href="#0" class="nav-link">
+                    <i class="nav-icon bi bi-box-seam"></i>
+                    <p>Item Management</p>
+                </a>
+            </li>
+
+            <!-- create transaction -->
+            <li class="nav-item">
+                <a href="#0" class="nav-link">
+                    <i class="nav-icon bi bi-receipt"></i>
+                    <p>Create Transaction</p>
+                </a>
+            </li>
+
+            <!-- my transactions -->
+            <li class="nav-item">
+                <a href="#0" class="nav-link">
+                    <i class="nav-icon bi bi-receipt-cutoff"></i>
+                    <p>My Transactions</p>
+                </a>
+            </li>
+
+            <!-- all transactions -->
+            <li class="nav-item">
+                <a href="#0" class="nav-link">
+                    <i class="nav-icon bi bi-journal-text"></i>
+                    <p>All Transactions</p>
+                </a>
+            </li>
+
+
+
         </ul>
         <!--end::Sidebar Menu-->
     </nav>
