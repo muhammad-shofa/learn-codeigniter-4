@@ -44,20 +44,13 @@
         <?= view("layout/navheader") ?>
 
         <!-- navbar / sidebar -->
-        <!-- <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> -->
-        <aside class="app-sidebar bg-white" data-bs-theme="light">
-            <?= view("layout/sidebar") ?>
-        </aside>
+        <?= view("layout/sidebar") ?>
 
         <!-- content -->
-        <main class="app-main">
-            <?= $this->renderSection("content") ?>
-        </main>
+        <?= $this->renderSection("content") ?>
 
         <!-- footer -->
-        <footer class="app-footer">
-            <?= view("layout/footer") ?>
-        </footer>
+        <?= view("layout/footer") ?>
     </div>
 
     <!--begin::Third Party Plugin(OverlayScrollbars)-->
